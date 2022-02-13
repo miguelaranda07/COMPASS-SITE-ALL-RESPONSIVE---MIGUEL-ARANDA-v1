@@ -88,12 +88,24 @@ body {
   margin-top: 10%;
   margin-bottom: 5%;
 }
-/*FOOTER GENERAL*/
+/*FOOTER CONTACTO*/
 .cont_item7{
   grid-area: cont_item7;
   justify-self: center;
+  animation: animacion4 3s;
 }
-/*FIN FOOTER GENERAL*/
+@keyframes animacion4 {
+ 0% {
+  transform: translate(0, 0);    
+ }
+ 50% {
+  transform: translate(0px, -30px);
+ }
+ 100% {
+  transform: translate(0, 0);    
+ }
+}
+/*FIN FOOTER CONTACTO*/
 /*FIN BOX GRID CONTACTO*/
 
 /*BOX GRID NOSOTROS*/
@@ -121,6 +133,15 @@ body {
   grid-area: nos_item4;
   justify-self: center;
   align-self: center;   
+  animation: animacion2 3s;
+}
+@keyframes animacion2 {
+ 0% {
+  transform: rotate(0);
+ }
+ 100% {
+  transform: rotate(360deg);
+ }
 } 
 .nos_item5{
   grid-area: nos_item5;
@@ -197,12 +218,27 @@ body {
   margin-top: 10%;
   margin-bottom: 5%; 
 }
-/*FOOTER GENERAL*/
+/*FOOTER LOGIN*/
 .log_item4{
   grid-area: log_item4;
   justify-self: center;
+  animation: animacion3 3s;
+}
+@keyframes animacion3 {
+ 0% {
+  transform: skewX(0deg);
+ }
+ 25% {
+  transform: skewX(20deg);
+ }
+ 50% {
+  transform: skewX(-20deg);   
+ }
+ 100% {
+  transform: skewX(0deg);
+ }
 } 
-/*FIN FOOTER GENERAL*/
+/*FIN FOOTER LOGIN*/
 /*FIN BOX GRID LOGIN*/
 
 /*LOGO GENERAL*/
@@ -243,6 +279,18 @@ nav ul li a{
   width: 500px;
   margin:auto;
   padding: 5%;
+  animation-duration: 3s;
+  animation-name: animacion1;
+}
+@keyframes animacion1 {
+ from {
+  margin-left: 100%;
+  width: 300%;
+ }
+ to {
+  margin-left: 14%;
+  width: 500px;
+ }
 }
 /*FIN IMAGEN PRINCIPAL*/
 
